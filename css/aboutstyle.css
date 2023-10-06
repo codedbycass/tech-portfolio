@@ -1,0 +1,348 @@
+* {
+    font-family: "Work Sans", Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    /* background: rgb(243, 255, 240);  */
+}
+
+/* layout */
+
+.headercontainer,
+.biocontainer,
+.bioitems,
+.socials-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.headercontainer {
+    padding: 2rem;
+    font-size: 2rem;
+}
+
+
+.biocontainer {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.bioitems {
+    width: 55%;
+    margin: 15rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    right: 30rem;
+}
+
+.socialscontainer {
+    display: flex;
+    justify-content: center;
+}
+
+/* base styles */
+.radial-gradient {
+    width: 100%;
+    height: 70rem;
+    }
+
+.radial-gradient {
+    background-image: radial-gradient(
+    rgba(123, 130, 49, 0.502) 1%,
+    rgb(255, 255, 255) 100%
+    );
+    }
+
+nav,
+.profNavs {
+    text-align: right;
+}
+
+.profNavs {
+    padding: 0 0 2rem 0;
+}
+
+.profNavs a:hover {
+    color:white;
+}
+
+/*Text area*/
+h1,
+button {
+    font-family: serif;
+    /* text-transform: none; */
+    font-style: italic;
+    font-weight: 100;
+}
+
+h1, 
+p {
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+a,
+h1 {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(255,103,0);
+}
+
+a {
+    padding: 1rem;
+}
+
+h1 {
+    font-size: 3.5rem;
+    text-transform: none;
+}
+
+button {
+    padding: 3rem;
+    background: none;
+    border: none;
+    font-size: 2rem;
+}
+
+button:hover,
+nav a:hover,
+.myName:hover,
+.projects-btn:hover {
+    font-style: italic;
+    border: 1px solid rgb(255,103,0);
+    border-radius: 60%;
+}
+
+.me {
+    width: 20%;
+    border-radius: 100%;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+}
+
+/* for projects area */
+.flexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.flexbox {
+    width: 60rem;
+    margin: 6rem 4rem;
+    height: 30rem;
+    overflow: scroll;
+}
+
+.selected {
+    padding: 2rem 3rem;
+}
+
+.flexContainer h2,
+.portfolio-text {
+    margin: 1rem;
+    position: absolute;
+    padding-top: 30rem
+}
+
+.portfolio-text {
+    margin-right: 80rem;
+    margin-top: 4rem;
+}
+
+.portfolio-img {
+    width: 100%;
+}
+
+#showLaoLang {
+    border: 1px solid blue;
+    border-radius: 4%;
+    padding: .4rem;
+}
+
+#showLaoLang:hover {
+    cursor:grab;
+}
+
+.bold {
+    color: blue;
+}
+
+/*Updated projects styling*/
+
+/*layouts for page*/
+
+/* the main section is the parent container for children elements*/
+main {
+    display: flex;
+    justify-content: center;
+}
+
+
+.projectsContainer, 
+.projectsList {
+    width: 75%;
+    height: auto;
+    background: white;
+    /* opacity: 50%; */
+    overflow: scroll;
+}
+
+/* .projectsList {
+    width:10%;
+    height: 300px;
+    margin-top: 15rem;
+} */
+
+/*This nav will be commented out for now until design and illstration projects finalized*/
+/* .projectsNav {
+    width: 100%;
+    background: rgb(255, 255, 255);
+    height: 3rem;
+    display: flex;
+    justify-content: space-around;
+} */
+
+.parent {
+    display: flex;
+    justify-content: center;  
+}
+
+.actualProjects,
+.projectText {
+    width: 60%;
+    height: auto;
+    margin: 2rem;
+}
+
+/* .actualProjects {
+    overflow: scroll;
+}  May need to activate based on if website has scroll or gif*/
+
+.projectText {
+    width: 40%;
+}
+
+.portfolio-imgs {
+    width: 100%;
+}
+
+/* styles for projects page*/
+
+ul {
+    padding: 1rem;
+}
+
+li {
+    list-style-type: none;
+    padding: 1rem;
+}
+
+.projectsNav a {
+    color: blue;
+}
+
+.projectText h3 {
+    padding-left: 1rem;
+}
+
+
+h2 a {
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.projects-btn {
+    margin: 3rem 0;
+    text-align: center;
+    border-radius: 60%;
+    border: 1px solid rgb(255,103,0);
+    width: 50%;
+    font-size: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/*about page*/
+
+.bio-aboutpage {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 10rem 0;
+}
+
+.bio-aboutpage div {
+    justify-content: center;
+    width: 50%;
+}
+
+.copyright {
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+}
+
+
+
+/* media queries*/
+
+@media screen and (max-width: 3000px) {
+    html {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 2000px) {
+    html {
+        font-size: .6rem;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .parent {
+        display:block;
+    }
+    .actualProjects,
+    .projectText {
+        width: 90%;
+        padding: 2rem 0;
+    }
+    .projects-btn {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 793px) {
+    html {
+        font-size: .5rem;
+    }
+}
+
+@media screen and (max-width: 676px) {
+    html {
+        font-size: .48rem;
+    }
+}
+
+@media screen and (max-width: 654px) {
+    .bioitems {
+        display: block;
+    }
+    .me {
+        top: 1rem;
+        left: 1rem;
+    }
+    .hide-654 {
+        display: none;
+    }
+
+}
