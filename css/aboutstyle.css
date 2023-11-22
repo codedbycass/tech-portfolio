@@ -73,6 +73,10 @@ nav,
     color:white;
 }
 
+.pageLink{
+    font-size: 1.5rem;
+}
+
 /*Text area*/
 h1,
 button {
@@ -100,7 +104,7 @@ a {
 }
 
 h1 {
-    font-size: 3.5rem;
+    font-size: 4.5rem;
     text-transform: none;
 }
 
@@ -117,7 +121,7 @@ nav a:hover,
 .projects-btn:hover {
     font-style: italic;
     border: 1px solid rgb(255,103,0);
-    border-radius: 60%;
+    border-radius: 1rem;
 }
 
 .me {
@@ -174,6 +178,25 @@ nav a:hover,
 
 .bold {
     color: blue;
+}
+
+.actualProjects img,
+.projectText h2,
+.projectText p,
+.bio-aboutpage,
+.about-row-1, 
+.about-row-2 {
+    opacity: 0; /* Set initial opacity to 0 */
+    animation: fadeIn 1.2s ease-in-out forwards; /* Animation properties */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 /*Updated projects styling*/
@@ -263,10 +286,10 @@ h2 a {
 .projects-btn {
     margin: 3rem 0;
     text-align: center;
-    border-radius: 60%;
+    border-radius: 1rem;
     border: 1px solid rgb(255,103,0);
     width: 50%;
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin-left: auto;
     margin-right: auto;
 
